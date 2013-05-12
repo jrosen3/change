@@ -1,0 +1,17 @@
+qr code generator api:
+https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=jaredarosen%40gmail.com
+
+php masspay api example:
+https://www.x.com/paypal-apis-masspay-php-5.3/soap
+
+markup to make mobile webiste look like native apps:
+http://matt.might.net/articles/how-to-native-iphone-ipad-apps-in-javascript/
+
+ios tutorial:
+http://www.hongkiat.com/blog/ios-development-guide-part2-your-first-app/
+
+google maps api help:
+http://stackoverflow.com/questions/2415081/show-google-maps-on-mobile-website
+
+local storage problem:
+http://stackoverflow.com/questions/11545149/ios-web-app-has-different-localstorage-than-mobile-safari

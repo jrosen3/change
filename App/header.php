@@ -50,6 +50,9 @@
 				// Tell Safari not to move the window.
 				event.preventDefault() ;
 			}
+
+			// returns width of browser viewport
+			var width = $(window).width();  
 		</script>
 
 		<!-- JQuery Mobile -->

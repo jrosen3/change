@@ -15,3 +15,6 @@ http://stackoverflow.com/questions/2415081/show-google-maps-on-mobile-website
 
 local storage problem:
 http://stackoverflow.com/questions/11545149/ios-web-app-has-different-localstorage-than-mobile-safari
+
+google maps api
+https://developers.google.com/maps/documentation/javascript/tutorial

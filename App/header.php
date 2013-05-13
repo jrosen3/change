@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html manifest="native.manifest">
+<html> <!--manifest="native.manifest">-->
 	<!--
 	Note: The web server must serve the manifest file as MIME type
 	text/cache-manifest, or else Safari will ignore it.
@@ -43,20 +43,28 @@
 			font-size: 14px ;
 			}
 		</style>
-	
-		<script>
-			// To be called when there's a move event on the body itself:
-			function BlockMove(event) {
-				// Tell Safari not to move the window.
-				event.preventDefault() ;
-			}
-
-			// returns width of browser viewport
-			var width = $(window).width();  
-		</script>
 
 		<!-- JQuery Mobile -->
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 	</head>
+
+	<body ontouchmove="BlockMove(event);">
+		<script>
+			// To be called when there's a move event on the body itself:
+			function BlockMove(event) {
+				// Tell Safari not to move the window.
+				event.preventDefault();
+			}
+
+			// returns width of browser viewport
+			var width = $(window).width();  
+		</script>
+	<!-- body closed in index.php and login.php -->
+<!-- html closed in index.php and login.php -->
+
+
+
+
+

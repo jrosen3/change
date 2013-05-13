@@ -1,6 +1,5 @@
 <?php include "header.php" ?>
-
-	<body ontouchmove="BlockMove(event);">
+	<!-- body opened in header.php -->
 		<div data-role="page" id="login">
 			<div data-role="header" data-position="fixed">
 				<h1>Login</h1>

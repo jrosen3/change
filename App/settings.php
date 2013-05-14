@@ -1,15 +1,24 @@
 <script>
+	var t = "TEST";
+
 	/*
-	 * Displays the weather when the page is shown
+	 * finds user location when the page is shown
 	 */
 	$(document).on("pageshow", "#settings", function() {
+		locate();
+	});
+
+	/*
+	 * converts location to lat, lon
+	 */
+	function locate() {
 		fetchLocation(function(position) {
 			var lat = position.coords.latitude;
     		var lon = position.coords.longitude;
     		var userLocation = lat + ', ' + lon;
 			//alert(userLocation);
 		});
-	});
+	};
 
 	/*
 	 * Error function, referenced by fetchLocation
@@ -39,9 +48,11 @@
 	</div>
 
 	<div data-role="content">
-		<a data-role="button" data-icon="delete" data-prefetch>Logout</a>
+		<a data-role="button" data-icon="delete">Logout</a>
+		<a data-role="button" data-icon="plus" onclick="locate();">Locate</a>
 		<!--
 		Logout button
+		Locate button
 		Map
 		-->
 	</div>

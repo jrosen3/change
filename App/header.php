@@ -28,6 +28,8 @@
 		<!-- Choose how to handle the phone status bar -->
 		<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		
+		<meta charset="utf-8">
+
 		<!-- Specify a 320x460 start-up image. -->
 		<link rel="apple-touch-startup-image" href="./startup.png" />
 		

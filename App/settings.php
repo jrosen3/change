@@ -1,6 +1,4 @@
 <script>
-	var t = "TEST";
-
 	/*
 	 * finds user location when the page is shown
 	 */
@@ -41,6 +39,21 @@
 	};
 </script>
 
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    
+    <script>
+      var map;
+        function initialize() {
+          var mapOptions = {
+            zoom: 8,
+            center: new google.maps.LatLng(-34.397, 150.644),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+          map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
+        }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
 <div data-role="page" id="settings">
 	<div data-role="header" data-position="fixed">
 		<a href="#qr" data-role="button" data-icon="back" data-prefetch>Back</a>
@@ -48,6 +61,7 @@
 	</div>
 
 	<div data-role="content">
+		<div id="map-canvas" style="margin:0; padding: 0; height:75%;"></div>
 		<a data-role="button" data-icon="delete">Logout</a>
 		<a data-role="button" data-icon="plus" onclick="locate();">Locate</a>
 		<!--

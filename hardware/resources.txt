@@ -1,2 +1,5 @@
 coin acceptor
 http://www.adafruit.com/products/787
+
+arduino camera
+http://www.adafruit.com/products/397

@@ -3,3 +3,6 @@ http://www.adafruit.com/products/787
 
 arduino camera
 http://www.adafruit.com/products/397
+
+qr decoder api
+http://blog.qr4.nl/post/QR-Code-Decoder-API.aspx

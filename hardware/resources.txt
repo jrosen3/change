@@ -1,0 +1,2 @@
+coin acceptor
+http://www.adafruit.com/products/787

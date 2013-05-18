@@ -17,7 +17,7 @@
 
 	<head>
 		<!-- The name of the app on the home screen -->
-		<title>Native Web App</title>
+		<title>Change</title>
 		
 		<!-- Prevent scaling -->
 		<meta name="viewport" content="user-scalable=no, width=device-width" />
@@ -33,16 +33,6 @@
 		
 		<!-- Choose a 57x57 image for the icon -->
 		<link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-
-		<style>
-			body {
-			margin: 0px ;
-			padding: 0px ;
-			color: #212121 ;
-			font-family: Helvetica;
-			font-size: 14px ;
-			}
-		</style>
 
 		<!-- JQuery Mobile -->
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />

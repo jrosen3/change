@@ -18,3 +18,10 @@ http://stackoverflow.com/questions/11545149/ios-web-app-has-different-localstora
 
 google maps api
 https://developers.google.com/maps/documentation/javascript/tutorial
+
+paypal login api
+https://www.x.com/developers/paypal/products/login-with-paypal
+https://developer.paypal.com/webapps/developer/docs/integration/direct/log-in-with-paypal/
+https://developer.paypal.com/webapps/developer/docs/integration/direct/log-in-with-paypal/js_button/ 
+https://developer.paypal.com/webapps/developer/docs/integration/direct/log-in-with-paypal/detailed/
+https://devportal.x.com/sdm/set_app/Production

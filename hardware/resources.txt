@@ -6,3 +6,10 @@ http://www.adafruit.com/products/397
 
 qr decoder api
 http://blog.qr4.nl/post/QR-Code-Decoder-API.aspx
+http://www.qr4.nl/QR-API-Dec.aspx?loc=http://www.thesite.com/theimage.jpg
+http://www.qr4.nl/QR-API-KeyGen.aspx
+
+
+arduino post to web server
+http://mosaic.cnfolio.com/StudentProjectCN2012Journal08
+http://forum.arduino.cc/index.php/topic,6595.0.html

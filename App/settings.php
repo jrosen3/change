@@ -16,6 +16,6 @@
 	<div data-role="content">
 		<!--<a data-role="button" data-icon="delete">Logout</a>-->
 		<a href="#info" data-role="button" data-icon="plus">Info</a>
-		<a href="#contact" data-role="button" data-icon="plus">Contact Us</a>
+		<a href="mailto:jaredarosen@gmail.com" data-role="button" data-icon="plus">Contact Us</a>
 	</div>
 </div>

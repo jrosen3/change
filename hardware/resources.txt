@@ -8,8 +8,10 @@ qr decoder api
 http://blog.qr4.nl/post/QR-Code-Decoder-API.aspx
 http://www.qr4.nl/QR-API-Dec.aspx?loc=http://www.thesite.com/theimage.jpg
 http://www.qr4.nl/QR-API-KeyGen.aspx
+http://www.qr4.nl/QR-Code-Scanners.aspx
 
 http://code.google.com/p/zxing/
+http://pyqrcode.sourceforge.net
 
 
 arduino post to web server

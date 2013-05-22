@@ -12,6 +12,7 @@ http://www.qr4.nl/QR-Code-Scanners.aspx
 
 http://code.google.com/p/zxing/
 http://pyqrcode.sourceforge.net
+http://blog.globalstomp.com/2011/09/decoding-qr-code-code-128-code-39.html
 
 
 arduino post to web server

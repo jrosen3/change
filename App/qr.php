@@ -5,8 +5,22 @@
 		var url = "https://chart.googleapis.com/chart?chld=M|0&chs="+width+"x"+width+"&cht=qr&chl="+email;
 		var img = '<img src="'+url+'" width="99%" height="99%">';
 		document.getElementById("qr_goes_here").innerHTML = img;
-		document.getElementById("email").value = email; //for use in contact.php
+		//send();
 	})
+
+	/*function send()
+	{
+		$.ajax({
+			type: 'POST',
+			url: 'test.php',
+    		data: { 
+				//'email': email,
+			},
+			success: function(data) {
+				document.getElementById('responce').innerHTML = data;
+			}
+		});
+	}*/
 </script>
 
 <div data-role="page" id="qr">
@@ -18,5 +32,6 @@
 
 	<div data-role="content">
 		<div id="qr_goes_here"></div> 
+		<div id="responce"></div>
 	</div>
 </div>

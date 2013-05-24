@@ -14,6 +14,10 @@ http://code.google.com/p/zxing/
 http://pyqrcode.sourceforge.net
 http://blog.globalstomp.com/2011/09/decoding-qr-code-code-128-code-39.html
 
+http://www.qr4.nl/QR-API-Dec.aspx?key=zv3qnC4v5FC1Oh3o7i4JHJu2NyksJS+z&loc=http://www.sparkplugdigital.com/wp-content/uploads/2011/04/qr_code.jpg
+http://decode.kaywa.com/api/decodeCode?API-KEY=5348cb414c8c85d5760583fd6e00c952&code=2029998765
+
+
 
 arduino post to web server
 http://mosaic.cnfolio.com/StudentProjectCN2012Journal08

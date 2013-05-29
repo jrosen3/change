@@ -1,4 +1,5 @@
 <?php
+	require_once("PHPMailer/class.phpmailer.php"); /*http://phpmailer.worxware.com/index.php?pg=install*/
 	/*****
 	$user_name = $_POST['user_name'];
 	$to = $_POST['email'];;
@@ -10,39 +11,41 @@
 	echo "true";
 	*****/
 
-	/*****
-	$to = "jaredarosen@gmail.com";
-	$subject = "HTML email";
+	
+	$mail = new PHPMailer;
 
-	$message = "
-	<html>
-		<head>
-			<title>HTML email</title>
-		</head>
-		<body>
-			<p>This email contains HTML Tags!</p>
-			<table>
-				<tr>
-					<th>Firstname</th>
-					<th>Lastname</th>
-				</tr>
-				<tr>
-					<td>John</td>
-					<td>Doe</td>
-				</tr>
-			</table>
-		</body>
-	</html>
-	";
+	$mail->IsSMTP();                                      // Set mailer to use SMTP
+	$mail->Host = 'smtp.timewarner.com';  // Specify main and backup server
+	$mail->SMTPAuth = true;                               // Enable SMTP authentication
+	$mail->Username = 'jswan';                            // SMTP username
+	$mail->Password = 'secret';                           // SMTP password
+	$mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
 
-	// Always set content-type when sending HTML email
-	$headers = "MIME-Version: 1.0" . "\r\n";
-	$headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
+	$mail->From = 'ericrosen@aol.com';
+	$mail->FromName = 'Eric Rosen';
+	$mail->AddAddress('jaredarosen@gmail.com', 'Jared Rosen');  // Add a recipient
+	//$mail->AddAddress('ellen@example.com');               // Name is optional
+	$mail->AddReplyTo('info@example.com', 'Information');
+	//$mail->AddCC('cc@example.com');
+	//$mail->AddBCC('bcc@example.com');
 
-	// More headers
-	$headers .= 'From: <webmaster@example.com>' . "\r\n";
-	$headers .= 'Cc: jrosen3@aol.com' . "\r\n";
+	$mail->WordWrap = 50;                                 // Set word wrap to 50 characters
+	/*
+	$mail->AddAttachment('/var/tmp/file.tar.gz');         // Add attachments
+	$mail->AddAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+	*/
+	$mail->IsHTML(true);                                  // Set email format to HTML
 
-	mail($to,$subject,$message,$headers);
-	*****/
+	$mail->Subject = 'Here is the subject';
+	$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+	$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+	if(!$mail->Send()) {
+	   echo 'Message could not be sent.';
+	   echo 'Mailer Error: ' . $mail->ErrorInfo;
+	   exit;
+	}
+
+	echo 'Message has been sent';
+	
 ?>

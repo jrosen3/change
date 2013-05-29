@@ -37,7 +37,7 @@
 			<img src="img/ads/frito.jpg" alt="frito" /> 
 		</div> 
 		<div>
-			Tap anywhere to reclim your change
+			Tap anywhere to reclaim your change
 		</div>
 	</div>
 </div>
